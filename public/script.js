@@ -90,33 +90,31 @@ document.getElementById("imageContainer").addEventListener("click", function() {
 });
 
  // Mobile Menu Toggle
- const menuBtn = document.getElementById("menu-btn");
- const mobileMenu = document.getElementById("mobile-menu");
- const closeMenu = document.getElementById("close-menu");
+      const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenu = document.getElementById("close-menu");
 
- menuBtn.addEventListener("click", () => {
-     mobileMenu.classList.remove("hidden");
-     mobileMenu.classList.remove("-translate-y-full");
- });
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden");
+            mobileMenu.classList.remove("-translate-y-full");
+        });
 
- closeMenu.addEventListener("click", () => {
-     mobileMenu.classList.add("hidden");
-     mobileMenu.classList.add("-translate-y-full");
- });
+        closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+            mobileMenu.classList.add("-translate-y-full");
+        });
 
- // Mobile Dropdown Toggle
- const mobileDropdownBtn = document.getElementById("mobile-dropdown-btn");
- const mobileDropdownMenu = document.getElementById("mobile-dropdown-menu");
+        // Mobile Dropdown Toggle
+        const mobileDropdownBtn = document.getElementById("mobile-dropdown-btn");
+        const mobileDropdownMenu = document.getElementById("mobile-dropdown-menu");
 
- mobileDropdownBtn.addEventListener("click", () => {
-     mobileDropdownMenu.classList.toggle("hidden");
- });
+        mobileDropdownBtn.addEventListener("click", () => {
+            mobileDropdownMenu.classList.toggle("hidden");
+        });
 
- // Close dropdown when clicking outside
- document.addEventListener("click", (event) => {
-     if (!mobileDropdownBtn.contains(event.target) && !mobileDropdownMenu.contains(event.target)) {
-         mobileDropdownMenu.classList.add("hidden");
-     }
- });
-
- AOS.init();
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (event) => {
+            if (!mobileDropdownBtn.contains(event.target) && !mobileDropdownMenu.contains(event.target)) {
+                mobileDropdownMenu.classList.add("hidden");
+            }
+        });

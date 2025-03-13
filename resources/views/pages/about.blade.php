@@ -97,10 +97,12 @@
         
         <!-- Right Side - Text Content -->
         <div class="md:w-1/2 bg-green-700 text-white p-10 flex flex-col justify-center">
-            <h2 class="text-3xl font-bold mb-4">Get a sneak peek into the insightful keynote speeches that will be delivered at Teravitta. We highlight the key topics and speakers who will be sharing their expertise and vision for the future of agriculture.
+            <h2 class="text-2xl font-bold mb-4">Get a sneak peek into the insightful keynote speeches that will be delivered at Teravitta. We highlight the key topics and speakers who will be sharing their expertise and vision for the future of agriculture.
             </p>
+           <div class="p-4">
             <button class="px-6 py-2 border border-white text-white hover:bg-white hover:text-green-700 transition duration-300">Discover More</button>
         </div>
+           </div>
     </div>
 </div>
 
@@ -151,7 +153,7 @@
     <div class="flex mx-auto flex-col md:flex-row justify-center items-center gap-8 px-5">
         <!-- Gardener Card 1 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[90%] md:w-[30%]" >
-            <img src="images/owner/leader1.jpg" alt="image" class="w-full object-cover" data-aos="zoom-in">
+            <img src="images/owner/leader1.jpg" alt="image" class="w-full object-cover  rounded-2xl p-3">
             <div class="p-5 text-center">
                 
                 <h2 class="text-xl font-semibold">Mr. Sazzad Zahir</h2>
@@ -161,7 +163,7 @@
         
         <!-- Gardener Card 2 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[90%] md:w-[30%]">
-            <img src="images/owner/leader2.jpg" alt="Lara Christine" class="w-full object-cover"  data-aos="zoom-in">
+            <img src="images/owner/leader2.jpg" alt="Lara Christine" class="w-full object-cover rounded-2xl p-3"  data-aos="zoom-in">
             <div class="p-5 text-center">
                 
                 <h2 class="text-xl font-semibold">Mr. Sanjeev Bose</h2>
@@ -197,9 +199,7 @@
 <!-- Main Footer -->
 @include('layouts.footer')
 
-<script>
-    
-</script>
+
 
 
 
