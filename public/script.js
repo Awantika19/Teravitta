@@ -118,3 +118,33 @@ document.getElementById("imageContainer").addEventListener("click", function() {
                 mobileDropdownMenu.classList.add("hidden");
             }
         });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-btn");
+    const closeMenuBtn = document.getElementById("close-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileDropdownBtn = document.getElementById("mobile-dropdown-btn");
+    const mobileDropdownMenu = document.getElementById("mobile-dropdown-menu");
+
+    // Open Menu
+    menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.remove("-translate-y-full");
+        mobileMenu.classList.add("translate-y-0");
+    });
+
+    // Close Menu
+    closeMenuBtn.addEventListener("click", function () {
+        mobileMenu.classList.remove("translate-y-0");
+        mobileMenu.classList.add("-translate-y-full");
+    });
+
+    // Toggle Mobile Dropdown
+    mobileDropdownBtn.addEventListener("click", function () {
+        mobileDropdownMenu.classList.toggle("hidden");
+    });
+});
+
+
+    
