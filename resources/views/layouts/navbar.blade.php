@@ -27,7 +27,7 @@
     </ul>
 
     <!-- Buttons -->
-    <div class="md:flex space-x-4  hidden lg:block" >
+    <div class=" space-x-4  hidden lg:flex" >
         <a href="#" class="bg-[#ff4e02] text-white px-4 py-2 rounded-full border border-white hover:bg-[##3d8a2c] transition-all">
             EXPRESS INTEREST
         </a>

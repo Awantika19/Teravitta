@@ -186,3 +186,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    function setActiveLink(clickedLink) {
+        // Remove active class from all links
+        navLinks.forEach(link => link.classList.remove("text-orange-500"));
+
+        // Add active class to the clicked link
+        clickedLink.classList.add("text-orange-500");
+
+        // Store active link in localStorage to maintain state on refresh
+        localStorage.setItem("activeNav", clickedLink.getAttribute("href"));
+    }
+
+    // Attach event listener to each navigation link
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            setActiveLink(this);
+        });
+    });
+
+    // Maintain active state on page reload
+    const activeNav = localStorage.getItem("activeNav");
+    if (activeNav) {
+        const activeLink = document.querySelector(`nav ul li a[href="${activeNav}"]`);
+        if (activeLink) {
+            setActiveLink(activeLink);
+        }
+    }
+});
