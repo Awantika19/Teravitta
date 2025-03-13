@@ -226,7 +226,7 @@
     
     <div class="flex mx-auto flex-col md:flex-row justify-center items-center gap-8 px-5">
         <!-- Gardener Card 1 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[90%] md:w-[30%]" >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[90%] md:w-[300px]" >
             <img src="images/owner/leader1.jpg" alt="image" class="w-full object-cover  rounded-2xl p-3">
             <div class="p-5 text-center">
                 
@@ -236,7 +236,7 @@
         </div>
         
         <!-- Gardener Card 2 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[90%] md:w-[30%]">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[90%] md:w-[300px]">
             <img src="images/owner/leader2.jpg" alt="Lara Christine" class="w-full object-cover rounded-2xl p-3"  data-aos="zoom-in">
             <div class="p-5 text-center">
                 
