@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>\
+    <title>Blog</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
   @include('layouts.css')
@@ -15,7 +15,7 @@
     @include('layouts.navbar')
 
 <!-- Page Title -->
-<div class=" md:h-[500px] relative z-10 flex flex-col items-center justify-center h-[300px] text-white text-center bg-cover text-center py-8 bg-cover bg-center" style="background-image: url('images/About_Banner_Background.jpg');">
+<div class=" md:h-[500px] relative z-10 flex flex-col items-center justify-center h-[300px] text-white   text-center py-8 bg-cover bg-center" style="background-image: url('images/About_Banner_Background.jpg');">
         <h1 class="text-5xl font-bold">Blog</h1>
         <p class="mt-2 flex items-center space-x-2">
             <span class="text-gray-300">🏠 Home</span> 
