@@ -127,8 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
         this.classList.toggle("clicked");
     });
 });
-<<<<<<< HEAD
-
  // Mobile Menu Toggle
       const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
@@ -188,5 +186,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     
-=======
->>>>>>> db3c48c2e9e7fb95c0627e0c4ebfb7f0596a556b
