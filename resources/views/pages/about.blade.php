@@ -4,36 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   @include('layouts.css')
 
-    <style>
-        .carousel-container {
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-            width: 100%;
-        }
-        .carousel-track {
-            display: flex;
-            gap: 20px;
-            animation: scrollLeft 15s linear infinite;
-            width: max-content;
-        }
-        @keyframes scrollLeft {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-50%);
-            }
-        }
-    </style>
 </head>
 <body>
      <!-- Navbar -->
@@ -65,7 +37,7 @@
         </ul>
 
         <!-- Buttons -->
-        <div class="md:flex space-x-4  hidden lg:block" >
+        <div class="flex space-x-4  hidden lg:block" >
             <a href="#" class="bg-[#ff4e02] text-white px-4 py-2 rounded-full border border-white hover:bg-[##3d8a2c] transition-all">
                 EXPRESS INTEREST
             </a>
@@ -130,10 +102,10 @@
             <!-- <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-cover bg-center" style="background-image: url('images/About_Us_Section_Image.jpg');"></div> -->
     
             <!-- Content Section -->
-            <div class="grid md:grid-cols-2 gap-8 items-center relative z-10">
+            <div class="grid md:grid-cols-2 gap-8 items-center relative z-10 py-10">
                 
                 <!-- Image Section -->
-                <div class="relative">
+                <div class="relative ">
                     <div class="absolute top-6 left-6 w-72 h-80 bg-orange-500 rounded-md"></div>
                     <img src="images/About_Us_Section_Image.jpg" alt="Farmer" class="relative w-72 h-80 object-cover rounded-lg shadow-lg border-4 border-white" >
                 </div>
@@ -184,7 +156,9 @@
     <div class="max-w-6xl mx-auto my-10 flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden">
         <!-- Left Side - Image -->
         <div class="md:w-1/2 relative">
-            <img src="images/blog_3.jpg" alt="Fresh Vegetables" class="w-full h-full object-cover">
+            <div class="image-container" id="imageContainer">
+                <img src="images/About_Banner_Background.jpg" alt="Fresh Vegetables" class="w-full h-full object-cover">
+            </div>
             <div class="absolute top-4 left-4 bg-green-800 text-white px-4 py-2 rounded-md">
                 <span class="font-bold">Teravitta Insights: Cultivating the Future of Agriculture
                 </span>
@@ -237,52 +211,8 @@
         </div>
 
         <!-- carousol -->
-        <div class= "bg-gray-100 flex justify-center items-center">
-            <div class="carousel-container w-full max-w-7xl">
-                <div class="carousel-track">
-                    <img src="images/media/aajtak.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/abp.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/bbc.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/cnbc.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/express.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/foxnews.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/indiatoday.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/indiatv.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/ndtv.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/newyork.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/skynews.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/tass.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/thehindu.jpg" class="w-60 h-40 object-cover rounded-lg">
-                    <img src="images/media/thetimes.jpg" class="w-60 h-40 object-cover rounded-lg">
-                </div>
-            </div>
-            
-        </div>
+      @include('layouts.carousel')
         
-        <!-- Bottom Section -->
-        <!-- <div class="flex grid-cols-1 md:grid-cols-3 gap-6 mt-5 p-6 bg-gray-100 rounded-lg justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <span class="text-orange-500 text-4xl">🏅</span>
-                <div>
-                    <p class="font-bold text-lg">25 Years Of Experience</p>
-                    <p class="text-gray-600 text-sm">All about planting and owing trees.</p>
-                </div>
-            </div>
-            <div class="flex items-center space-x-4">
-                <span class="text-orange-500 text-4xl">👨‍🌾</span>
-                <div>
-                    <p class="font-bold text-lg">Experienced Workers</p>
-                    <p class="text-gray-600 text-sm">All about planting and owing trees.</p>
-                </div>
-            </div>
-            <div class="flex items-center space-x-4">
-                <span class="text-orange-500 text-4xl">🏆</span>
-                <div>
-                    <p class="font-bold text-lg">100+ Awards Win</p>
-                    <p class="text-gray-600 text-sm">All about planting and owing trees.</p>
-                </div>
-            </div>
-        </div> -->
 </div>
 <!--Parteners-->
 <div class="bg-gray-100 py-10">
@@ -295,7 +225,7 @@
     <div class="flex mx-auto flex-col md:flex-row justify-center items-center gap-8 px-5">
         <!-- Gardener Card 1 -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[90%] md:w-[30%]" >
-            <img src="images/owner/leader1.jpg" alt="Lara Christine" class="w-full object-cover" data-aos="zoom-in">
+            <img src="images/owner/leader1.jpg" alt="image" class="w-full object-cover" data-aos="zoom-in">
             <div class="p-5 text-center">
                 
                 <h2 class="text-xl font-semibold">Mr. Sazzad Zahir</h2>
@@ -312,15 +242,7 @@
                 <p class="text-gray-500">Associate vice president (Expo)</p>
             </div>
         </div>
-        <!-- Gardener Card 3 -->
-        <!-- <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="images/About_Banner_Background.jpg" alt="Lara Christine" class="w-full h-64 object-cover" data-aos="zoom-in">
-            <div class="p-5 text-center">
-                
-                <h2 class="text-xl font-semibold">Lara Christine</h2>
-                <p class="text-gray-500">Landscaper</p>
-            </div>
-        </div> -->
+       
     </div>  
 </div>
 
@@ -347,69 +269,14 @@
 </div>
 
 <!-- Main Footer -->
-<footer class="bg-gray-900 text-white py-12 flex ">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6 justify-between items-center">
-        
-        <!-- About Section -->
-        <div>
-            <h2 class="text-xl font-bold flex items-center space-x-2">
-                <span class="text-red-500">Teravitta
-            </h2>
-            <p class="text-gray-400 mt-3">
-                Follow us for the latest updates, event news, and exclusive content.
-            </p>
-            <div class="flex space-x-3 mt-4">
-                <a href="#" class="w-[40px] text-center p-2 bg-gray-700 rounded-full"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="w-[40px] text-center p-2 bg-gray-700 rounded-full"><i class="fa-brands fa-instagram"></i></i></a>
-                <a href="#" class="w-[40px] text-center p-2 bg-gray-700 rounded-full"><i class="fa-brands fa-twitter"></i></i></a>
-                <a href="#" class="w-[40px] text-center p-2 bg-gray-700 rounded-full"><i class="fa-brands fa-linkedin"></i></i></a>
-            </div>
-        </div>
+@include('layouts.footer')
 
-        <!-- Quick Links -->
-        <div>
-            <h3 class="text-xl font-bold border-b-2 border-orange-500 pb-2">Quick Links</h3>
-            <ul class="mt-4 space-y-2 text-gray-400">
-                <li>➤ Overview</li>
-                <li>➤ Our Blogs</li>
-                <li>➤ Events</li>
-                <li>➤ Contact Us</li>
-            </ul>
-        </div>
-
-        <!-- Contact Form -->
-        <div>
-            <h3 class="text-xl font-bold border-b-2 border-orange-500 pb-2">Contact Us</h3>
-            <div class="mt-4 text-gray-400">
-                <p>📧 info@example.com</p>
-                <p>📞 123-456-7890</p>
-                <div class="mt-4 flex">
-                    <input type="email" placeholder="Your Email Address" class="p-2 rounded-l w-full text-black">
-                    <button class="bg-orange-500 px-4 py-2 rounded-r">→</button>
-                </div>
-                <label class="flex items-center space-x-2 mt-3">
-                    <input type="checkbox">
-                    <span>I agree with the <a href="#" class="underline text-orange-400">Privacy Policy</a></span>
-                </label>
-            </div>
-        </div>
-
-    </div>
-</footer>
-
-<!-- Bottom Bar -->
-<div class="bg-orange-500 text-white text-center py-3">
-    © 2025 Charitics. All rights reserved | <a href="#" class="underline">Terms & Conditions</a> | <a href="#" class="underline">Privacy Policy</a>
-</div>  
-<!-- AOS JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    AOS.init();
+    
 </script>
 
-<!-- Font Awesome Icons -->
-<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+
+    @include('layouts.script')
 </body>
 </html>
