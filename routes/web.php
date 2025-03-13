@@ -9,3 +9,18 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('pages.about');
 });
+
+Route::get('/blog', function () {
+    return view('pages.blog');
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+Route::get('/media', function () {
+    return view('pages.media');
+});
+Route::get('/event', function () {
+    return view('pages.event');
+});
