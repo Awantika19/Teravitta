@@ -7,7 +7,7 @@
                 <span class="text-red-500">Teravitta</span>
             </h2>
             <h3>Organizer</h3>
-            <img src="images/ahmedcaol.png" alt="" class="w-20 py-5">
+            <img src="images/logo/ahmedcaol.png" alt="" class="w-20 py-5">
             <p class="text-[#4ea1b6]">AHMED COAL CORPORATION</p>
             <p class="text-gray-400 mt-3 text-center">
                 Follow us for the latest updates, event news, and exclusive content.

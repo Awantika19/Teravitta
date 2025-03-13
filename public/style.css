@@ -35,3 +35,40 @@
         transform: translateX(-50%);
     }
 }
+/* blog */
+ /* Hover effect */
+ .hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+/* event */
+      /* Hover effect */
+      .hover-zoom {
+        transition: transform 0.3s ease-in-out;
+    }
+    .hover-zoom:hover {
+        transform: scale(1.05);
+    }
+/* media */
+    .carousel-container {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        width: 100%;
+    }
+    .carousel-track {
+        display: flex;
+        gap: 20px;
+        animation: scrollLeft 15s linear infinite;
+        width: max-content;
+    }
+    @keyframes scrollLeft {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
